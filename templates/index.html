@@ -39,5 +39,13 @@
         <input type="submit" value="Create Product">
     </form>
 
+    <table>
+        <h4>Available Warehouses</h4>
+        <a href="/manageWare">Manage Warehouses</a>
+        {% for house in warehouse %}
+            <p>{{ house }}</p>
+        {% endfor %}
+    </table>
+
 </div>
 {% endblock %}
